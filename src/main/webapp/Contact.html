@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+		body {
+
+background-image:url('https://wallpaperaccess.com/full/1282794.jpg');
+background-size: cover;
+background-repeat: no repeat;
+background-attachment: fixed;
+}
+
+ header {
+ background-color:black;
+ color:white;
+ text-align: center;
+ padding:1em 0;
+}
+ h2 {
+ color:red;
+}
+
+ 
+
+</style>
+
+<script>
+    function updateDateTime() {
+      const now = new Date();
+      const dateString = now.toLocaleDateString();
+      const timeString = now.toLocaleTimeString();
+      const dateTimeString = `${dateString} ${timeString}`;
+      document.getElementById('datetime').textContent = dateTimeString;
+    }
+
+    // Update the date and time every second
+    setInterval(updateDateTime, 1000);
+  </script>
+
+
+
+</head>
+<body>
+
+<header>
+<h1><center> Hospital Application </center></h1>
+
+<h2>Toll Free Number :: 8382075792</h2>
+</header>
+
+
+  <h2><p id="datetime"></p></h2>
+
+
+<h1><center>Send Enquiry ::</center></h1>
+
+
+
+<form action="contact" method="post">
+<center><h2>Name :<input type="text" name="name"></h2></center>
+<center><h2>Message :<input type="text" name="message"></h2></center>
+<center><input type="submit" value="Send"></center>
+</form>
+
+
+<footer>
+<h1><a href="Index.html">HomePage</a></h1>
+</footer>
+
+</body>
+</html>
